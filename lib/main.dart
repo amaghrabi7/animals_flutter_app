@@ -18,14 +18,16 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                  color: Colors.black,
-                  alignment: Alignment.center,
-                  padding: EdgeInsets.only(
-                    top: 20,
+              CircleAvatar(
+                backgroundColor: Colors.black,
+                radius: 150,
+                child: CircleAvatar(
+                  radius: 110,
+                  backgroundImage: AssetImage(
+                    "assets/images/dog.jpeg",
                   ),
-                  child: Image.asset("assets/images/dog.jpeg",
-                      height: 200, width: 200)),
+                ),
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
